@@ -25,3 +25,188 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.container-alert {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 50vw;
+  height: 50vh;
+}
+
+.game-board {
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid rgb(35, 160, 35);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  animation: pipe-animation 1.5s infinite linear;
+}
+
+.block {
+  position: absolute;
+  bottom: 25px;
+  width: 80px;
+  animation: block 1.5s infinite linear;
+}
+ 
+.mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+.clouds {
+  width: 550px;
+  position: absolute;
+  animation: clouds-animation 20s infinite linear;
+}
+
+.component-alert {
+  margin-top: 50px;
+}
+
+.component-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+.button {
+   height: 50px;
+   width: 150px;
+   background-color: #F5F5F5F5;
+   border-radius: 20px;
+   font-size: 20px;
+   text-weight: bold;
+}
+
+.button:hover {
+  background-color: #B0B1B3
+}
+
+.animation-alert {
+  display: flex;
+}
+
+.pipe-alert {
+  align-items:center;
+  margin-top: 160px;
+  margin-left: -20px;
+}
+
+.pipe-size {
+  width: 100px;
+  height: 120px;
+}
+
+.mario-jump {
+  width: 400px;
+}
+
+.mario-loop {
+  align-items:center;
+  margin-left: 180px;
+  margin-top: -30px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score{
+  font-size: 20px;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -1200px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes block {
+  from {
+    right: -1200px
+  }
+
+  to {
+    right: 100%
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 180px;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+
+  60% {
+    bottom: 180px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
