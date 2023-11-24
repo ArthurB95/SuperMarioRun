@@ -1,5 +1,5 @@
 <div align='center'>
-<img src='.github/screen-capture.webm' width='900' height='600' />
+<img src='.github/screen-capture.gif' width='900' height='600' />
 </div>
 
 <p align="center">
