@@ -19,7 +19,7 @@
 
 ## 💻 About the project
 
-- 🚀 This project simulates a game with Mario, where the objective is to jump over obstacles: 
+- 🚀 This project simulates a game with Mario, where the objective is to jump over obstacles: https://super-mario-run.vercel.app/
 
 ---
 
